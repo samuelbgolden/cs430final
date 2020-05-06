@@ -1,0 +1,16 @@
+CS430 Final Project
+
+STUDENT: Samuel Golden
+EMAIL: sgolden2@hawk.iit.edu
+CWID: A20430084
+
+GENERAL INFO:
+Chose to work independently, and chose to implement the MST algorithm. Built in Python with GUI Library TkInter. I have
+also included some images of the application working in this folder in case there is some weird visual cross-platform
+bug.
+
+BUILD INFO:
+Because Python comes with TkInter standard, running this project should be as simple as navigating into the directory
+with the two files and running 'python core.py'. This was written in python 3.8, so it is possible that having a python
+installation at 3.8 is necessary, but I didn't use anything new to that installation, so I imagine earlier versions are
+fine.
