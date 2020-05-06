@@ -7,7 +7,7 @@ from algs import *
 class App(Frame):
     def __init__(self, parent, *args, **kwargs):
         Frame.__init__(self, parent, *args, **kwargs)
-        self.winfo_toplevel().title("CS430 Final Project: Samuel Golden and Shyam Patel")
+        self.winfo_toplevel().title("CS430 Final Project: Samuel Golden")
         self.parent = parent
 
         # init fonts
@@ -22,7 +22,6 @@ class App(Frame):
         self.outputLabel = Label(self, text='Algorithmic output:', font=self.titleFont)
         self.outputNb = Notebook(self)
         self.mstTab = Frame(self.outputNb)
-        self.spTab = Frame(self.outputNb)
         self.inputLabel = Label(self, text='Matrix input (-1 = no link, separate weight with single space, no trailing newline):', font=self.titleFont)
         self.matrixLabel = Label(self, text='Given Matrix', font=self.titleFont)
         self.matrixText = Text(self, font=self.textFont, height=8, width=30)
@@ -80,8 +79,6 @@ class App(Frame):
         mstView.populate(unsortedEdges, sortedEdges, mstEdges)
         mstView.grid(row=0, column=0, sticky='nsew')
 
-        spEdges = sp(matrix)
-
         self.write_status("IDLE: Done. Last successful run: " + datetime.now().strftime("%H:%M:%S"))
 
     def write_status(self, string):
@@ -94,7 +91,6 @@ class App(Frame):
 
     def config_nb(self):
         self.outputNb.add(self.mstTab, text='Minimum Spanning Tree')
-        self.outputNb.add(self.spTab, text='Shortest Path')
         self.outputNb.select(self.mstTab)
         self.outputNb.enable_traversal()
 

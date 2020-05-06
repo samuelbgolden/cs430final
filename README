@@ -7,7 +7,8 @@ CWID: A20430084
 GENERAL INFO:
 Chose to work independently, and chose to implement the MST algorithm. Built in Python with GUI Library TkInter. I have
 also included some images of the application working in this folder in case there is some weird visual cross-platform
-bug.
+bug. The matrix input box is a little picky; entries in the same row must be separated by a single space ' ', and lines
+should be separated by online a newline '\n'. There CANNOT be a trailing newline character on the last row.
 
 BUILD INFO:
 Because Python comes with TkInter standard, running this project should be as simple as navigating into the directory

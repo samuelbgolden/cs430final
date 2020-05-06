@@ -59,8 +59,3 @@ def mst(matrix):
             tree.pop()
 
     return edges, sortedEdges, tree
-
-
-# shortest path
-def sp(matrix):
-    return []
